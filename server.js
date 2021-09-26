@@ -13,7 +13,7 @@ const cookieParser = require("cookie-parser");
 
 //middleware
 //app.use(cors({ credentials: true, origin: process.env.FRONT_END_URL }));
-app.use(cors({ credentials: true, origin: "https://taskez.herokuapp.com" }));
+app.use(cors({ credentials: true, origin: "https://taskez-1.web.app" }));
 app.use(cookieParser());
 app.use(bodyParser.json());
 
