@@ -1,7 +1,7 @@
 var axioss = require("axios");
 
 var axios = axioss.create({
-  baseURL: "http://localhost:4000",
+  baseURL: "https://taskez.herokuapp.com",
 
   headers: {
     "Access-Control-Allow-Origin": "*",
