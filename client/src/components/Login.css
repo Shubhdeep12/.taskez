@@ -1,0 +1,270 @@
+.login {
+  display: flex;
+  flex-direction: row wrap;
+  align-items: center;
+  overflow: hidden;
+}
+.image {
+  margin-left: 10.74%;
+}
+.image img {
+  width: 30vw;
+}
+.signinup {
+  height: 600px;
+  border: 2px solid rgba(26, 59, 88, 0.24);
+  border-radius: 65px;
+  margin-left: 10%;
+  margin-top: 1%;
+  -webkit-border-radius: 65px;
+  -moz-border-radius: 65px;
+  -ms-border-radius: 65px;
+  -o-border-radius: 65px;
+}
+.signinup > .headings {
+  display: flex;
+  flex-flow: row;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+.signinup > .headings > .signInHeading {
+  width: 76px;
+  height: 26px;
+  position: relative;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 101.1%;
+  /* or 26px */
+
+  color: rgba(26, 59, 88, 0.33);
+}
+.signinup > .headings > .signInHeading_active {
+  position: relative;
+  width: 76px;
+  height: 26px;
+
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 101.1%;
+  /* or 26px */
+
+  color: #1a3b58;
+}
+.signinup > .headings > .signInHeading_active::before {
+  content: "";
+  height: 3px;
+  background-color: #1a3b58;
+  width: 35%;
+  left: 0px;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 33px;
+  animation: barSignin 0.2s ease-in-out;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+  -webkit-animation: barSignin 0.2s ease-in-out;
+}
+
+@keyframes barSignin {
+  0% {
+    transform: translateX(95px);
+    -webkit-transform: translateX(95px);
+    -moz-transform: translateX(95px);
+    -ms-transform: translateX(95px);
+    -o-transform: translateX(95px);
+  }
+  100% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+}
+.signinup > .headings > .signUpHeading {
+  position: relative;
+  width: 114px;
+  height: 26px;
+  padding-left: 20px;
+
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 101.1%;
+  /* or 26px */
+
+  color: rgba(8, 18, 27, 0.33);
+}
+.signinup > .headings > .signUpHeading_active {
+  width: 114px;
+  height: 26px;
+  padding-left: 20px;
+  position: relative;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 101.1%;
+  /* or 26px */
+
+  color: #1a3b58;
+}
+.signinup > .headings > .signUpHeading_active::before {
+  content: "";
+  height: 3px;
+  background-color: #1a3b58;
+  width: 20%;
+  left: 20px;
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+  border-radius: 33px;
+  animation: barSignup 0.2s ease-in-out;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+  -webkit-animation: barSignup 0.2s ease-in-out;
+}
+
+@keyframes barSignup {
+  0% {
+    transform: translateX(-95px);
+    -webkit-transform: translateX(-95px);
+    -moz-transform: translateX(-95px);
+    -ms-transform: translateX(-95px);
+    -o-transform: translateX(-95px);
+  }
+  100% {
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+}
+.signinup .line {
+  width: 314px;
+  height: 0px;
+  background-color: rgba(64, 145, 223, 0.12);
+  border-radius: 33px;
+  border: 1px solid rgba(64, 145, 223, 0.12);
+  margin: 30px 100px 30px 100px;
+  -webkit-border-radius: 33px;
+  -moz-border-radius: 33px;
+  -ms-border-radius: 33px;
+  -o-border-radius: 33px;
+}
+.signinup .formContainer .form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px 50px 100px;
+}
+.signinup .formContainer .signinForm {
+  animation: signinform 0.5s ease-in-out;
+  -webkit-animation: signinform 0.5s ease-in-out;
+}
+@keyframes signinform {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.signinup .formContainer .signinForm .form .label1Signin {
+  width: 128px;
+  height: 21px;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 101.1%;
+  /* or 21px */
+  color: #1a3b58;
+}
+
+.signinup .formContainer .signinForm .form .label2Signin {
+  width: 145px;
+  height: 15px;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  /* identical to box height */
+  color: #999999;
+  margin-bottom: 35px;
+}
+
+.signinup .formContainer .form input[type="submit"],
+.signinup .formContainer .form input[type="email"],
+.signinup .formContainer .form input[type="password"],
+.signinup .formContainer .form input[type="text"] {
+  width: 314px;
+  height: 45px;
+  padding: 17px 30px 17px 20px;
+  background: #ffffff;
+  border: 1px solid #cbdbea;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 35px;
+  outline: none;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.signinup .formContainer .form input[type="submit"] {
+  background: #329c89;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 103.38%;
+  /*identicaltoboxheight,or17px*/
+  padding: 10px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.signinup .formContainer .form input[type="submit"]:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+.signinup .formContainer .form .eye {
+  position: relative;
+  top: -67px;
+  left: 285px;
+}
+.signinup .formContainer .form .Error {
+  display: none;
+}
+.signinup .formContainer .form .Error_display {
+  position: absolute;
+  margin-top: 224px;
+  left: 70%;
+  transform: translateX(-50%);
+  color: #f65b2a;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.signinup .formContainer .signupForm {
+  animation: signupform 0.5s ease-in-out;
+  -webkit-animation: signupform 0.5s ease-in-out;
+}
+@keyframes signupform {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

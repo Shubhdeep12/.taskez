@@ -1,0 +1,100 @@
+.mainPage {
+  display: flex;
+  flex-wrap: row wrap;
+  background-color: #fefefe;
+  max-width: 230vw;
+}
+
+.sidebar {
+  max-height: 120vh;
+  flex: 1;
+  min-width: 150px;
+
+  margin-top: -10px;
+  background: #fefefe;
+  border-right: 2px solid #f0f0f0;
+  box-sizing: border-box;
+}
+.mainbar {
+  flex: 4;
+}
+ul {
+  list-style-type: none;
+}
+
+.sidebar .logo {
+  position: relative;
+  width: 76px;
+  height: 26px;
+  padding-left: 51px;
+  padding-top: 51px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 101.1%;
+  cursor: pointer;
+}
+.icons {
+  padding-right: 15px;
+  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+}
+.upper {
+  padding-top: 60px;
+}
+.tab {
+  position: relative;
+  padding: 20px;
+  height: 17px;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 101.1%;
+  /*or17px*/
+  letter-spacing: 0.05em;
+  color: #9a9a9a;
+  cursor: pointer;
+}
+
+.tab_active {
+  padding: 20px;
+  height: 17px;
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 101.1%;
+  /*or17px*/
+  letter-spacing: 0.05em;
+  color: #212121;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  cursor: pointer;
+}
+.tab_active::before {
+  content: "";
+  height: 90%;
+  background-color: #1a3b58;
+  left: 98%;
+  bottom: 0px;
+  position: absolute;
+  border: 3px solid #329c89;
+  border-top-left-radius: 99px;
+  border-bottom-left-radius: 99px;
+  animation: bar 0.2s ease-in-out;
+  -webkit-animation: bar 0.2s ease-in-out;
+}
+@keyframes bar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.lower {
+  padding-top: 40px;
+}

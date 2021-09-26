@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+body {
+  font-family: Poppins;
+  font-style: normal;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body .Dark {
+  background: #fefefe;
+  height: 100vh;
+}
+body .Dark {
+  filter: invert(1) hue-rotate(180deg);
+  height: 100vh;
+}
+.Dark img {
+  filter: invert(1) hue-rotate(180deg);
+}

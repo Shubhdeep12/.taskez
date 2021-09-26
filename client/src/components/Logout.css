@@ -1,0 +1,37 @@
+.logoutComponent {
+  display: flex;
+  align-items: center;
+  margin: 100px 100px;
+}
+
+.logoutText {
+  padding: 0px 20px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 101.1%;
+}
+.logoutButton {
+  width: 80px;
+  background-color: #329c89;
+  color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #329c89;
+  font-weight: bold;
+  border: 1px solid #329c89;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.logoutButton:active {
+  background-color: #329c89;
+  color: #ffffff;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
