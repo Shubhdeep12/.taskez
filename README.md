@@ -40,7 +40,7 @@ Taskez is a todo app while helps an individual or the company to have a shared n
   <br>
   <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/sestting_1.png" alt="filter1">
   <br>
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/sessting_2.png" alt="filter2">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/sestting_2.png" alt="filter2">
 
 - On logout tab we can logout just by clicking ok
   <br>
