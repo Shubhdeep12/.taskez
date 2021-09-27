@@ -17,6 +17,13 @@ function MainPage() {
   const userId = useSelector((state) => state.authDetails.userId);
   const [refresh, setRefresh] = useState(false);
   const dispatch = useDispatch();
+  const isLoggedIn = useSelector((state) => state.authDetails.isLoggedIn);
+
+  useEffect(() => {
+    if (!isLoggedIn) {
+      history.push("/");
+    }
+  }, [isLoggedIn]);
   useEffect(async () => {
     try {
       const status = await axios.get("/status", { userId });

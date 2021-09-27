@@ -22,19 +22,13 @@ function App() {
     <div className={currentTheme}>
       <Router>
         <Switch>
-          {!isLoggedIn ? (
-            <AnimatePresence exitBeforeEnter>
-              <Route path="/" exact>
-                <Login />
-              </Route>
-            </AnimatePresence>
-          ) : (
-            <AnimatePresence exitBeforeEnter>
-              <Route path="/Main" exact>
-                <MainPage />
-              </Route>
-            </AnimatePresence>
-          )}
+          <Route path="/" exact>
+            <Login />
+          </Route>
+
+          <Route path="/Main" exact>
+            <MainPage />
+          </Route>
         </Switch>
       </Router>
     </div>

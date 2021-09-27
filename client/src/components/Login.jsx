@@ -63,6 +63,13 @@ function Login() {
     });
   }, [refresh]);
 
+
+   useEffect(() => {
+    if (isLoggedIn) {
+      history.push("/Main");
+    }
+  }, [isLoggedIn]);
+
   const responseTable_signin = async (e) => {
     e.preventDefault();
 
