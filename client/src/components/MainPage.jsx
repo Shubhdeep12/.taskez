@@ -33,7 +33,7 @@ function MainPage() {
       dispatch(signout());
       localStorage.setItem("userId", "");
       sessionStorage.setItem("userId", "");
-      history.push("/");
+      window.location.reload();
     }
   }, [refresh]);
 

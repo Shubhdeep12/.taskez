@@ -55,7 +55,7 @@ exports.addNote = async (req, res) => {
     const userFind = await db.user.findOne(
       mongoose.Types.ObjectId(req.body.userId)
     );
-    console.log(userFind.name);
+
     const userObj = new db.note({
       heading: "Give your task a title",
       data: "Description..",
