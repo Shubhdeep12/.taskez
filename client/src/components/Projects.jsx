@@ -42,7 +42,7 @@ function Projects() {
       const status = await axios.get("/status", { userId });
       const p = await axios.get("/Projects/");
       const allUsers = await axios.get("/Projects/users");
-      const User = await axios.get("/Projects/user", { userId });
+      const User = await axios.get("/Projects/user");
       setUserName(User.data);
       setTotalUsers(allUsers.data);
       setNotes(p.data);

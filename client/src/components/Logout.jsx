@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { signout } from "../actions";
 import { useHistory } from "react-router-dom";
 
-function Logout(refresh, setRefresh) {
+function Logout() {
   const dispatch = useDispatch();
 
   const history = useHistory();
@@ -21,7 +21,7 @@ function Logout(refresh, setRefresh) {
           dispatch(signout());
           localStorage.setItem("userId", "");
           sessionStorage.setItem("userId", "");
-          setRefresh(!refresh);
+          window.location.reload();
         }}
       />
     </div>
