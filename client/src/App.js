@@ -3,7 +3,6 @@ import React from "react";
 import { Login, MainPage } from "./components";
 import { useSelector, useDispatch } from "react-redux";
 import { signIn, signout } from "./actions";
-import { AnimatePresence } from "framer-motion";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {

@@ -108,7 +108,7 @@ function Login() {
       history.push("/Main");
     } catch (err) {
       console.log(err.response);
-      setSignUpErrorDisplay({
+      setSignInErrorDisplay({
         state: true,
         message: "Invalid Details",
       });

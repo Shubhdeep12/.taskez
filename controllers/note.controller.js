@@ -53,7 +53,7 @@ exports.getUser = async (req, res) => {
 exports.addNote = async (req, res) => {
   try {
     const userFind = await db.user.findOne(
-      mongoose.Types.ObjectId(req.body.id)
+      mongoose.Types.ObjectId(req.body.userId)
     );
 
     const userObj = new db.note({
