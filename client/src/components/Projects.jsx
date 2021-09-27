@@ -52,7 +52,6 @@ function Projects() {
       dispatch(signout());
       localStorage.setItem("userId", "");
       sessionStorage.setItem("userId", "");
-      setRefresh(!refresh);
     }
   }, [refresh]);
 
