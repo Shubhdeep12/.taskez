@@ -242,7 +242,6 @@ function Projects() {
                   ev.preventDefault();
 
                   setShowEditHeading(true);
-                  console.log("inheading");
                 }}
               >
                 {showEditBar.note.heading.length > 45
@@ -335,9 +334,9 @@ function Projects() {
                     noteId: showEditBar.note._id,
                     userId: userId,
                   };
-                  console.log(delData);
+
                   const result = await axios.post("/Projects/delete", delData);
-                  console.log(result);
+
                   setRefresh(!refresh);
                   setShowEditBar(false);
                 } catch (error) {}

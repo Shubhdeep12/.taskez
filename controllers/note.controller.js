@@ -39,7 +39,6 @@ exports.getUser = async (req, res) => {
       })
       .exec((err, user) => {
         if (err) {
-          console.log("in");
           res.status(500).send({ message: err });
           return;
         }

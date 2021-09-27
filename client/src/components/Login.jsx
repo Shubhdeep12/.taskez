@@ -63,8 +63,7 @@ function Login() {
     });
   }, [refresh]);
 
-
-   useEffect(() => {
+  useEffect(() => {
     if (isLoggedIn) {
       history.push("/Main");
     }
@@ -99,7 +98,7 @@ function Login() {
       };
 
       const signInResponse = await axios.post("/Login/signin", userSignInData);
-      console.log(signInResponse);
+      //console.log(signInResponse);
       dispatch(signIn(signInResponse.data.values.id));
       if (signInRemember) {
         localStorage.setItem("userId", signInResponse.data.values.id);
@@ -148,7 +147,7 @@ function Login() {
       };
 
       const signUpResponse = await axios.post("/Login/signup", userSignUpData);
-      console.log(signUpResponse);
+      //console.log(signUpResponse);
       dispatch(signIn(signUpResponse.data.values.id));
       if (signInRemember) {
         localStorage.setItem("userId", signUpResponse.data.values.id);
