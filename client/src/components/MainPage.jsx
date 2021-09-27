@@ -141,7 +141,7 @@ function MainPage() {
               project: <Projects />,
               overview: <Overview />,
               setting: <Setting />,
-              logout: <Logout />,
+              logout: <Logout refresh={refresh} setRefresh={setRefresh} />,
             }[current]
           }
         </AnimatePresence>
