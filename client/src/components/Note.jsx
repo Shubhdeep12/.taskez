@@ -96,8 +96,8 @@ function Note({
                     }
                   >
                     {e.heading.length > 30
-                      ? e.heading.substring(0, 30)
-                      : e.heading + "..."}
+                      ? e.heading.substring(0, 30) + "..."
+                      : e.heading}
                   </div>
                   <div
                     onClick={(ev) => {
