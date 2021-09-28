@@ -52,7 +52,7 @@ exports.getUser = async (req, res) => {
 
 exports.addNote = async (req, res) => {
   try {
-    const userFind = await db.user.findOne(
+    const userFind = await db.user.findById(
       mongoose.Types.ObjectId(req.body.userId)
     );
 
