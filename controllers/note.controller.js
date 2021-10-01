@@ -20,6 +20,7 @@ exports.getAllNotes = async (req, res) => {
   }
 };
 
+//get request to get all users registered
 exports.getAllUsers = async (req, res) => {
   try {
     const allUsers = await db.user.find();
@@ -30,6 +31,7 @@ exports.getAllUsers = async (req, res) => {
   }
 };
 
+//get request to get current user.
 exports.getUser = async (req, res) => {
   try {
     db.user
@@ -51,6 +53,7 @@ exports.getUser = async (req, res) => {
   }
 };
 
+//Post request to add a note.
 exports.addNote = async (req, res) => {
   try {
     const userFind = await db.user.findById(
@@ -84,6 +87,7 @@ exports.addNote = async (req, res) => {
   }
 };
 
+//Post request to delete a note.
 exports.deleteNote = async (req, res) => {
   try {
     db.note.findByIdAndDelete(
@@ -116,6 +120,7 @@ exports.deleteNote = async (req, res) => {
   }
 };
 
+//Put request to update the note.
 exports.updateNote = async (req, res) => {
   try {
     await db.note.findByIdAndUpdate(mongoose.Types.ObjectId(req.body.noteId), {

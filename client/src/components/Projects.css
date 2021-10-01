@@ -103,8 +103,8 @@
   max-width: 400px;
   height: 35px;
   padding: 17px 45px 17px 15px;
-  background: #9b8c8c;
-  border: 1px solid #9a9a9a;
+  background: none;
+  border: 1px solid;
   box-sizing: border-box;
   border-radius: 99px;
   outline: none;
@@ -112,8 +112,6 @@
   -moz-border-radius: 99px;
   -ms-border-radius: 99px;
   -o-border-radius: 99px;
-  font-family: Poppins;
-  font-style: normal;
 }
 .avatars {
   flex: 1;

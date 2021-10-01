@@ -2,7 +2,6 @@ import React from "react";
 import "./Note.css";
 import { GoComment } from "react-icons/go";
 import svg1 from "../svg/svg1.svg";
-import svg3 from "../svg/svg1.svg";
 import axios from "../axios";
 import { useSelector } from "react-redux";
 function Note({

@@ -4,7 +4,6 @@ import { AiOutlineHome, AiOutlineFolderOpen } from "react-icons/ai";
 import { IoStatsChartOutline } from "react-icons/io5";
 import { BsChatSquareDots, BsCalendar } from "react-icons/bs";
 import { FiSettings, FiLogOut } from "react-icons/fi";
-import { AnimatePresence } from "framer-motion";
 import "./MainPage.css";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "../axios";
@@ -135,16 +134,14 @@ function MainPage() {
         </div>
       </div>
       <div className="mainbar">
-        <AnimatePresence exitBeforeEnter>
+        {
           {
-            {
-              project: <Projects />,
-              overview: <Overview />,
-              setting: <Setting />,
-              logout: <Logout />,
-            }[current]
-          }
-        </AnimatePresence>
+            project: <Projects />,
+            overview: <Overview />,
+            setting: <Setting />,
+            logout: <Logout />,
+          }[current]
+        }
       </div>
     </div>
   );
