@@ -1,7 +1,5 @@
 const mongoose = require("mongoose");
 
-const schema = mongoose.Schema;
-
 const noteSchema = new mongoose.Schema(
   {
     heading: {

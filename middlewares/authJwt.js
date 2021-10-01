@@ -4,6 +4,13 @@ const User = db.user;
 const Role = db.role;
 require("dotenv").config();
 
+/*This method/middleware will check if there is any token 
+  stored in request cookies as key pair of token:tokenValue
+
+  if present then verify it with secret key,
+  if the token is expired or is different then expected
+  then it will throw error and return error status code.
+*/
 verifyToken = (req, res, next) => {
   // console.log(req.cookies);
   //console.log(req.body);
@@ -21,6 +28,7 @@ verifyToken = (req, res, next) => {
   }
 };
 
+//to check if user is admin or not
 isAdmin = (req, res, next) => {
   User.findById(req.userId).exec((err, user) => {
     if (err) {
@@ -52,6 +60,7 @@ isAdmin = (req, res, next) => {
   });
 };
 
+//to check if user is moderator or not.
 isModerator = (req, res, next) => {
   User.findById(req.userId).exec((err, user) => {
     if (err) {

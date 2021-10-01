@@ -12,13 +12,19 @@ const { logout, authJwt } = require("./middlewares");
 const cookieParser = require("cookie-parser");
 
 //middleware
+
+//using cors for allowing the origin(frontend url) to send requests.
 //app.use(cors({ credentials: true, origin: process.env.FRONT_END_URL }));
 app.use(cors({ credentials: true, origin: "https://taskez-1.web.app" }));
-app.use(cookieParser());
-app.use(bodyParser.json());
 
+//to use cookies
+app.use(cookieParser());
+
+//to convert request in json format.
+app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
+
 //Setting up port
 const port = process.env.PORT || 4000;
 
@@ -34,6 +40,7 @@ try {
   initial();
 } catch (err) {}
 
+//initial function to set up different types of roles in database.
 function initial() {
   Role.estimatedDocumentCount((err, count) => {
     if (!err && count === 0) {
@@ -69,6 +76,7 @@ function initial() {
     }
   });
 }
+
 const connection = mongoose.connection;
 connection.once("open", () => {
   console.log("mongodb database connection established successfully");
@@ -78,15 +86,18 @@ connection.once("open", () => {
 app.use("/Login", Login);
 app.use("/Projects", Projects);
 
+//get request to logout (clear out the cookie)
 app.route("/logout").get((req, res) => {
   //console.log("logging out");
   logout.logoutUser(req, res);
 });
 
+//get request to check if token given is still valid or not.
 app.route("/status").get([authJwt.verifyToken], (req, res) => {
   res.status(200).send({ message: "token verified" });
 });
 
+//starting server on given port.
 app.listen(port, () => {
   console.log(`server is running on port: ${port}`);
 });

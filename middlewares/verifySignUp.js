@@ -2,6 +2,7 @@ const db = require("../models");
 const ROLES = db.ROLES;
 const User = db.user;
 
+//to check if username or email is duplicate or not while signing up.
 checkDuplicateUsernameOrEmail = (req, res, next) => {
   // Username
 
@@ -38,6 +39,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
   // });
 };
 
+//to check if any other role is given while signup.
 checkRolesExisted = (req, res, next) => {
   if (req.body.roles) {
     for (let i = 0; i < req.body.roles.length; i++) {

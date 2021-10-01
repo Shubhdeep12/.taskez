@@ -7,6 +7,7 @@ var bcrypt = require("bcryptjs");
 require("dotenv").config();
 var _ = require("underscore");
 
+//to signup and sending id and name in response witha cookie.
 exports.signup = (req, res) => {
   const user = new User({
     name: req.body.name,
@@ -91,6 +92,7 @@ exports.signup = (req, res) => {
   }
 };
 
+//to signin
 exports.signin = (req, res) => {
   // console.log(req.body);
   try {

@@ -9,9 +9,10 @@ var _ = require("underscore");
 
 app.use(cors());
 
+//get request to get all notes of every type present in database.
 exports.getAllNotes = async (req, res) => {
   try {
-    const allNotes = await db.note.find().sort({ _id: -1 });
+    const allNotes = await db.note.find().sort({ createdAt: -1 });
 
     res.status(200).send(allNotes);
   } catch (error) {
