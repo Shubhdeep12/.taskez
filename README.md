@@ -21,30 +21,30 @@ Taskez is a todo app while helps an individual or the company to have a shared n
 
 - On this platform one can easily Signin or Signup using their email id.
   <br>
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/assets/login.png" alt="Signin">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/login.png" alt="Signin">
   <br>
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/assets/signup.png" alt="Signup">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/signup.png" alt="Signup">
 
 - After login, there is a Projects tab where all of the notes are shown.
 
 - On the Projects page, we can create a note in any category.
   <br>
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/assets/Projects.png" alt="HOME">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/Projects.png" alt="HOME">
 
 - we can update or delete a note also.
   <br>
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/assets/project_2.png" alt="comment">
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/assets/project_3.png" alt="comment">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/project_2.png" alt="comment">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/project_3.png" alt="comment">
 
 - On settings tab we can change the theme of the platofrm according to us.
   <br>
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/assets/sestting_1.png" alt="filter1">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/sestting_1.png" alt="filter1">
   <br>
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/assets/sestting_2.png" alt="filter2">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/sestting_2.png" alt="filter2">
 
 - On logout tab we can logout just by clicking ok
   <br>
-  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/assets/logout.png" alt="dark">
+  <img src="https://github.com/Shubhdeep12/.taskez/blob/master/Assets/logout.png" alt="dark">
 
 </em>
 </p>
