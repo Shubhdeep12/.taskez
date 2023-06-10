@@ -2,7 +2,7 @@
 
 ### Link to App
 
-- <a href="https://taskez-1.web.app/](https://master--rainbow-hummingbird-6e088e.netlify.app/">Click Here</a>
+- <a href="https://master--rainbow-hummingbird-6e088e.netlify.app/">Click Here</a>
 
 ### Introduction
 
