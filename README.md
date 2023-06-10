@@ -54,8 +54,8 @@ Taskez is a todo app while helps an individual or the company to have a shared n
 
 ### Tools & Frameworks Used.
 
-- <b>Firebase</b> is used to host the <b>Frontend</b> of the Application.
-- <b>Heroku</b> is used to host <b>Backend</b> of the Application.
+- <b>Netlify</b> is used to host the <b>Frontend</b> of the Application.
+- <b>Render</b> is used to host <b>Backend</b> of the Application.
 - <b>VS Code</b> is used to develop the Application.
 - <b>React</b> and <b>Redux</b> is used to develop the Frontend of the Application.
 - <b>CSS3</b> is used for styling the application.

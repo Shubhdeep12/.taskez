@@ -15,7 +15,7 @@ const cookieParser = require("cookie-parser");
 
 //using cors for allowing the origin(frontend url) to send requests.
 //app.use(cors({ credentials: true, origin: process.env.FRONT_END_URL }));
-app.use(cors({ credentials: true, origin: "https://taskez-1.web.app" }));
+app.use(cors({ credentials: true, origin: process.env.CLIENT_URL }));
 
 //to use cookies
 app.use(cookieParser());
